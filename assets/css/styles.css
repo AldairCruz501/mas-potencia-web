@@ -1,4 +1,3 @@
-
 :root {
   --primary: #7AB730; /* Mantener solo las variables necesarias */
   --secondary: #f4faec;
@@ -10,7 +9,6 @@
   --dark: #212121;
   --font-family-sans-serif: "Poppins", sans-serif;
 }
-
 
 *,
 *::before,
@@ -26,7 +24,6 @@ html {
   line-height: 1.15;
 }
 
-  
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -37,7 +34,6 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
@@ -53,26 +49,16 @@ p {
   margin-left: auto;
 }
 
-/*Top Bar*/
-a{
+a {
   color: #0079B8;
 }
-.text-primary img{
-  width: 30px;
-}
-.topbar-link:hover {
-  color: #000000;
-}
 
-.separator {
-  color: #0079b8;
-}
-
-/*Navbar*/
 .nav-link {
-  display: block;
-  padding: 0.5rem 1rem;
   color: #000000 !important;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #0079B8 !important;
 }
 
 .navbar {
@@ -89,350 +75,12 @@ a{
   }
 }
 
-@media (min-width: 992px) {
-  .navbar-position {
-    position: absolute; 
-    top: 3rem; 
-    left: 0;
-    right: 0;
-    bottom: 100rem;
-    z-index: 10;
-  }
-  .topbar-position {
-    position: absolute;
-    width: 100%;
-    top: -2rem;
-    left: 0;
-    z-index: 100;
-  }
-}
-
 .bg-primary {
   background-color: var(--primary) !important;
 }
 
 .bg-secondary {
   background-color: var(--secondary) !important;
-}
-
-
-/********** Custom CSS ************/
-h1,
-h2,
-.font-weight-bold {
-  font-weight: 700 !important;
-}
-
-h3,
-h4,
-.font-weight-semi-bold {
-  font-weight: 600 !important;
-}
-
-h5,
-h6,
-.font-weight-medium {
-  font-weight: 500 !important;
-}
-
-/*banner*/
-
-#banner{
-  background-image: url(/assets/imagenes/portada.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-}
-
-.title-banner{
-  color: #ffffff;
-  font-size: 2.5rem;
-}
-
-.subtitle-banner{
-  color: #ffffff;
-  font-size: 2rem;
-}
-
-.subtitle-descp {
-  color: #ffffff;
-  font-size: 1rem;
-}
-
-.descp-banner{
-  color: #ffffff;
-  font-size: 1rem;
-}
-
-  .title-nosotros{
-    font-size: 2rem;
-  }
-  
-  .descp-nosotros{
-    font-size: 1rem;
-  }
-  
-  .img-nosotros {
-    width: 120%;
-  }
-
-  @media (min-width: 425px) {
-    .subtitle-banner{
-      color: #ffffff;
-      font-size: 3.5rem;
-    }
-    
-    .subtitle-descp {
-      color: #ffffff;
-      font-size: 1.5rem;
-    }
-  }
-
-@media (min-width: 992px) {
-  #banner {
-    height: 40rem;
-    position: relative;
-    margin-top: 130px;
-    z-index: 1;
-  }
-  .title-banner {
-    font-size: 5rem;
-  }
-  .subtitle-banner{
-    font-size: 9rem;
-  }
-  .subtitle-descp {
-    font-size: 4rem;
-  }  
-  .descp-banner {
-    font-size: 2rem;
-  }
-
-  .title-nosotros{
-    font-size: 2.5rem !important;
-  }
-  
-  .descp-nosotros{
-    font-size: 1.5rem !important;
-  }
-
-  .img-nosotros {
-    width: 75%;
-  }
-
-}
-/*nosotros*/
-
-#nosotros{
-  background-color: #FFFFFF;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.cont-nosotros{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 80px;
-}
-
-.der-nosotros{
-  width: 60%;
-}
-
-.izq-nosotros{
-  width: 50%;
-  padding: 40px;
-}
-
-.izq-nosotros h3{
-  text-align: left;
-  color:#000000;
-  font-size: 35px;
-  text-transform: uppercase;
-  font-weight: 600;
-  width: 100%;
- 
-  margin: 20px auto;
-}
-
-.izq-nosotros p{
-  text-align: left;
-  font-size: 20px;
-  margin: 10px auto;
-  width: 100%;
-  color: #000000;
-}
-
-.der-nosotros img{
-  width: 80% !important;
-  
-}
-
-.sub-about {
-  color: #000000;
-}
-
-/*valores*/
-
-#v-mision {
-  position: relative;
-  background-image: url(/assets/imagenes/portada-valores.png); /* Cambia la ruta a tu imagen de fondo */
-  background-size: cover;
-  background-position: center;
-  padding: 50px 20px;
-}
-
-#v-mision::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* background-color: rgba(0, 0, 0, 0.6); Oscurece el fondo */
-  z-index: 1;
-}
-
-.main-container {
-  position: relative;
-  z-index: 2; /* Asegura que los elementos estén sobre la superposición oscura */
-}
-
-.m-vision {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px; /* Espaciado entre elementos */
-}
-
-.mision {
-  flex: 1;
-  min-width: 250px;
-  max-width: 300px;
-  text-align: center;
-}
-
-.mision img {
-  width: 80px;
-  height: auto;
-  margin-bottom: 15px;
-}
-
-.mision h4 {
-  font-size: 40px;
-  margin-bottom: 10px;
-  color: #FFFFFF;
-}
-
-.mision p {
-  font-size: 18px;
-  line-height: 1.5;
-  color: #FFFFFF;
-}
-
-
-    /*carrusel marcas*/
-
-    #marcas{
-      background-color: #ffffff;
-      background-size: cover;
-      padding: 50px;
-      
-    }
-    
-    .titulo-marcas h3{
-      color: #000000;
-      text-align: center;
-    }
-    
-    .box-marcas{
-      background-color: #ffffff;
-      text-align: center;
-      border-radius: 10px;
-      background-size: cover;
-     
-      justify-content: center;
-    }
-    
-    .box-marcas img{
-      text-align: center;
-      width: 70% !important;
-      gap: 40px;
-    }
-    .slick-prev:before, .slick-next:before {
-      color: #3675AE !important; /* Cambia el color de las flechas */
-      
-  }
-
-
-  .carousel-control-next-icon, .carousel-control-prev-icon {
-    background-color: #0079b8;
-  }
-
-
-  /*productos estrella*/
-  
-  #prod-estrella{
-background-color: #ffffff;
-    background-size: cover;
-}
-
-
-.cont-seritem {
-    position: relative;
-    display: inline-block;
-}
-
-.cont-seritem img {
-    width: 100%; /* Ajusta el ancho de la imagen al contenedor */
-    height: auto; /* Mantiene la proporción original de la imagen */
-    display: block;  
-}
-
-.cont-seritem:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, rgb(12, 81, 138) 0%, rgba(96,150,109,0) 40%);
-    z-index: 2; /* Coloca el fondo degradado por encima de la imagen */
-}
-
-.cont-seritem h6{
-    position: absolute;
-    bottom: 0;
-    z-index: 2;
-    padding: 80px;
-    color: #fff;
-    font-size: 20px;
-    line-height: 0.9;
-    width: 80%;
-}
-
-.cont-seritem span{
-    background-color: #0057A2;
-    padding: 20px;
-    color: #fff;
-    font-size: 2rem;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 2;
-    cursor: pointer;
-}
-
-.cont-seritem span:hover{
-    background-color: #fff; 
-    color: #0057A2; 
-}
-
-.cont-seritem .fa-plus:hover{
-    transform: rotate(20deg);
-    transition: 0.5s;
-
 }
 
 .btn-comprar {
@@ -453,161 +101,19 @@ background-color: #ffffff;
   background-color: #0033aa;
 }
 
-.btn-seritem {
-  position: absolute;
-  bottom: 0;
-  z-index: 8;
-  margin-top: 20rem;
-  margin-bottom: 2.5rem;
-  margin-left: 5rem;
-  background-color: transparent !important;
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
-  border-radius: 5px;
-  text-align: center;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.btn-seritem:hover {
-  background-color: #ffffff !important;
-  color: #0079b8;
-}
-
-
-
-/*productos*/
-
-#productos {
-  text-align: center;
-  padding: 2rem;
-  background-image: url(/assets/imagenes/portada-productos.png);
-  color: white;
-}
-
-.productos h4 {
-  margin-bottom: 1rem;
-  font-size: 50px;
-}
-
-.btn-ver-mas {
-  padding: 0.75rem 1.5rem;
-  background-color: transparent !important;
-  color: #fff;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  display: inline-block; /* Asegura que el enlace se vea como un botón */
-}
-
-.btn-ver-mas:hover {
-  background-color: #ffffff !important;
-  color: #0079b8;
-}
-
-.grid-productos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  padding: 0 1rem;
-}
-
-.producto {
-  position: relative;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  font-size: 80px;
-}
-
-.producto img {
-  width: 100%;
-  height: auto;
-  transition: transform 0.3s ease;
-}
-
-.producto:hover img {
-  transform: scale(1.1);
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(18, 83, 148, 0.9); /* Fondo azul translúcido */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.producto:hover .overlay {
-  opacity: 1;
-}
-
-.overlay h3 {
-  color: white;
-  margin-bottom: 1rem;
-  font-size: 1rem;
-}
-
-.btn-comprar {
-  padding: 0.5rem 1rem;
-  background-color: transparent !important;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.btn-comprar:hover {
-  background-color: #ffffff !important;
-  color: #0079b8;
-}
-
-/*videos youtebe*/
-
 .video-container {
   text-align: center;
-  
   width: 100%;
   padding: 80px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   border-radius: 10px;
 }
-h1 {
-  font-size: 50px;
-  color: #000000;
-  margin-bottom: 20px;
-}
-iframe {
-  width: 100%;
-  height: 450px;
-  border: none;
-  border-radius: 10px;
-}
 
-/*FAQs*/
-#faqs{
+#faqs {
   background-image: url(/assets/imagenes/fondo-faq.png);
   background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.title-faqs {
-  color: #0079b8;
+  padding: 1rem 0;
 }
 
 .accordion-item {
@@ -625,38 +131,35 @@ iframe {
   background-color: #e9ecef;
 }
 
+.contact-info {
+  background-color: #0079b8;
+}
 
-/*contacto*/
-
-
-/*--------------------------------
-              Whatsapp
-  --------------------------------*/
-  /* WhatsApp Button */
-  .float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 20px;
-    left: 20px;
-    background-color: #25d366;
-    color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
-  }
-  
-  .float:hover {
-    background-color: #fff;
-    color: #25d366;
-  }
-
-.my-float{
-    margin-top:16px;
+.contact-info-title {
+  color: #ffffff;
 }
 
 .footer {
   background-color: #0079b8;
+}
+
+/* WhatsApp Button */
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  left: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.float:hover {
+  background-color: #fff;
+  color: #25d366;
 }
