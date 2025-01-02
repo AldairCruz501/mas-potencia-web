@@ -29,7 +29,6 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #656565;
   text-align: left;
 }
 
@@ -49,26 +48,6 @@ p {
   margin-left: auto;
 }
 
-a {
-  color: #0079B8;
-}
-
-.nav-link {
-  color: #000000 !important;
-}
-
-.nav-link:hover, .nav-link:focus {
-  color: #0079B8 !important;
-}
-
-.navbar {
-  padding: 0.5rem 1rem;
-}
-
-.navbar-brand img {
-  width: 8rem;
-}
-
   /*Top Bar*/
   a{
     color: #0079B8;
@@ -85,8 +64,25 @@ a {
   }
   
 
+  /*NavBar*/
+.nav-link {
+  color: #000000 !important;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #0079B8 !important;
+}
+
+.navbar {
+  padding: 0.5rem 1rem;
+}
+
+.logo-navbar {
+  width: 8rem;
+}
+
 @media (min-width: 992px) {
-  .navbar-brand img {
+  .logo-navbar {
     width: 12rem;
   }
 }
@@ -126,6 +122,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
+    
   }
   
   .title-banner{
@@ -254,6 +251,8 @@ a {
   background-color: #e9ecef;
 }
 
+
+/*contacto*/
 .contact-info {
   background-color: #0079b8;
 }
@@ -261,6 +260,51 @@ a {
 .contact-info-title {
   color: #ffffff;
 }
+
+.contact-info-item {
+  color: #ffffff;
+}
+
+.item-text {
+  font-size: 14px;
+}
+
+.item-text:hover{
+  color: #000000;
+}
+
+#nombre,
+#correo,
+#telefono,
+#producto,
+#mensaje,
+.btn{
+  background-color: #0079B8;
+  color: #FFFFFF;
+}
+
+#nombre::placeholder,
+#correo::placeholder,
+#telefono::placeholder,
+#producto::placeholder,
+#mensaje::placeholder {
+  color: #ffffff;
+}
+
+.btn:hover {
+  border-color: #0079b8;
+  color: #0079B8;
+}
+
+.link-hover:hover {
+  color: #000000 !important;
+}
+
+.logo-ml {
+  width: 50px;
+}
+
+
 
 .footer {
   background-color: #0079b8;
