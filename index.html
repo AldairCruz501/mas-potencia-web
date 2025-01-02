@@ -168,7 +168,7 @@
                   <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribir mensaje"></textarea>
                 </div>
                 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-                <div class="g-recaptcha pb-2" data-sitekey="6LeZSKwqAAAAAIxIqYVphe9ggLqwFZHADYROQRm8"></div>
+                <div class="g-recaptcha pb-2" data-sitekey="6LeZSKwqAAAAAIxIqYVphe9ggLqwFZHADYROQRm8" data-callback="onSubmit"></div>
                 <button type="submit" class="btn btn-block mb-4 ">
                   Enviar
                 </button>
@@ -239,49 +239,73 @@
   <!-- SweetAlert Script -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault();  // Evitar el envío del formulario
-        const formData = new FormData(this);
-        
-        fetch('enviar.php', {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => response.json())  // Esperar respuesta JSON
-        .then(data => {
-            // Muestra el mensaje dependiendo del status
-            if (data.status === 'success') {
-                Swal.fire({
-                    title: data.title,
-                    text: data.text,
-                    icon: 'success',
-                    confirmButtonText: 'Aceptar'
-                }).then(() => {
-                    window.location.replace('index.html');
-                });
-            } else {
-                Swal.fire({
-                    title: data.title,
-                    text: data.text,
-                    icon: 'error',
-                    confirmButtonText: 'Aceptar'
-                }).then(() => {
-                    window.location.replace('index.html#contacto');
-                });
-            }
-        })
-        .catch(error => {
-            // En caso de error
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();  // Evitar el envío del formulario
+
+    // Validar campos requeridos
+    const nombre = document.getElementById('nombre').value;
+    const correo = document.getElementById('correo').value;
+    const telefono = document.getElementById('telefono').value;
+    const producto = document.getElementById('producto').value;
+
+    if (!nombre || !correo || !telefono || !producto) {
+        Swal.fire({
+            title: 'Error',
+            text: 'Por favor, completa todos los campos requeridos.',
+            icon: 'error',
+            confirmButtonText: 'Aceptar'
+        });
+        return; // Detener el envío si hay campos vacíos
+    }
+
+    // Si todos los campos están llenos, mostrar el reCAPTCHA
+    grecaptcha.execute();
+});
+
+// Manejar la respuesta del reCAPTCHA
+function onSubmit(e) {
+    e.preventDefault(); // Evitar el envío del formulario
+
+    const formData = new FormData(document.getElementById('contactForm'));
+
+    fetch('enviar.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Manejar la respuesta del servidor
+        if (data.status === 'success') {
             Swal.fire({
-                title: 'Error',
-                text: 'Hubo un problema con el envío del formulario',
+                title: data.title,
+                text: data.text,
+                icon: 'success',
+                confirmButtonText: 'Aceptar'
+            }).then(() => {
+                window.location.replace('index.html');
+            });
+        } else {
+            Swal.fire({
+                title: data.title,
+                text: data.text,
                 icon: 'error',
                 confirmButtonText: 'Aceptar'
             }).then(() => {
                 window.location.replace('index.html#contacto');
             });
+        }
+    })
+    .catch(error => {
+        Swal.fire({
+            title: 'Error',
+            text: 'Hubo un problema con el envío del formulario',
+            icon: 'error',
+            confirmButtonText: 'Aceptar'
+        }).then(() => {
+            window.location.replace('index.html#contacto');
         });
     });
+}
 </script>
 </body>
 </html>
