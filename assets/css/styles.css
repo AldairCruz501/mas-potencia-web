@@ -1759,9 +1759,3 @@ iframe {
 .footer {
   background-color: #0079b8;
 }
-
-.g-recaptcha {
-  max-width: 100%;
-  height: 10%;
-  margin: 0 auto;
-}
