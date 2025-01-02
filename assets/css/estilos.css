@@ -1,0 +1,165 @@
+:root {
+    --primary: #7AB730; /* Mantener solo las variables necesarias */
+    --secondary: #f4faec;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #FFFFFF;
+    --dark: #212121;
+    --font-family-sans-serif: "Poppins", sans-serif;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    line-height: 1.15;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #656565;
+    text-align: left;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  .container,
+  .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  a {
+    color: #0079B8;
+  }
+  
+  .nav-link {
+    color: #000000 !important;
+  }
+  
+  .nav-link:hover, .nav-link:focus {
+    color: #0079B8 !important;
+  }
+  
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar-brand img {
+    width: 8rem;
+  }
+  
+  @media (min-width: 992px) {
+    .navbar-brand img {
+      width: 12rem;
+    }
+  }
+  
+  .bg-primary {
+    background-color: var(--primary) !important;
+  }
+  
+  .bg-secondary {
+    background-color: var(--secondary) !important;
+  }
+  
+  .btn-comprar {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0044cc;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-comprar:hover {
+    background-color: #0033aa;
+  }
+  
+  .video-container {
+    text-align: center;
+    width: 100%;
+    padding: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+  
+  #faqs {
+    background-image: url(/assets/imagenes/fondo-faq.png);
+    background-size: cover;
+    padding: 1rem 0;
+  }
+  
+  .accordion-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+  }
+  
+  .accordion-button {
+    border: 1px solid #ccc;
+    background-color: transparent;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: #e9ecef;
+  }
+  
+  .contact-info {
+    background-color: #0079b8;
+  }
+  
+  .contact-info-title {
+    color: #ffffff;
+  }
+  
+  .footer {
+    background-color: #0079b8;
+  }
+  
+  /* WhatsApp Button */
+  .float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    left: 20px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+  }
+  
+  .float:hover {
+    background-color: #fff;
+    color: #25d366;
+  }
