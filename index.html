@@ -568,37 +568,37 @@
                 Compra Directa
               </h1>
               <p>Déjanos tus datos. Te contactaremos pronto.</p>
-              <form>
-                <div class="row">
-                  <div class="col-md-6 mb-4">
-                    <div class="form-outline">
-                      <input type="text" name="nombre" class="form-control nombre" placeholder="Nombre" required/>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-4">
-                    <div class="form-outline">
-                      <input type="email"  name="correo" class="form-control correo" placeholder="Correo" required/>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-4">
-                    <div class="form-outline">
-                      <input type="tel" name="telefono" class="form-control telefono" placeholder="Teléfono" required/>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-4">
-                    <div class="form-outline">
-                      <input type="text" name="producto" class="form-control productos" placeholder="Producto" required/>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-outline mb-4">
-                  <textarea class="form-control mensaje" name="mensaje" rows="4" placeholder="Escribir mensaje"></textarea>
-                </div>
-                <div class="g-recaptcha" data-sitekey="6LeZSKwqAAAAAIxIqYVphe9ggLqwFZHADYROQRm8"></div> 
-                <button type="submit" class="btn btn-block mb-4 ">
-                  Enviar
-                </button>
               </form>
+              <form id="contactForm">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="correo" name="correo" required>
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="producto" class="form-label">Producto</label>
+                    <input type="text" class="form-control" id="producto" name="producto" required>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="terminos" required>
+                    <label class="form-check-label" for="terminos">
+                        Acepto los términos y condiciones
+                    </label>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6LeZSKwqAAAAAIxIqYVphe9ggLqwFZHADYROQRm8"></div>
+                <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+            </form>
             </div>
           </div>
         </div>
