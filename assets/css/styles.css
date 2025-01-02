@@ -75,6 +75,24 @@ a {
   }
 }
 
+@media (min-width: 992px) {
+  .navbar-position {
+    position: absolute; 
+    top: 3rem; 
+    left: 0;
+    right: 0;
+    bottom: 100rem;
+    z-index: 10;
+  }
+  .topbar-position {
+    position: absolute;
+    width: 100%;
+    top: -2rem;
+    left: 0;
+    z-index: 100;
+  }
+}
+
 .bg-primary {
   background-color: var(--primary) !important;
 }
