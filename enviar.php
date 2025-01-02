@@ -17,7 +17,7 @@ if ($_POST['g-recaptcha-response'] == null || !isset($_POST['g-recaptcha-respons
     $message = "Nombre: " . $nombre .  "\n Correo: " . $correo .  "\n Telefono de contacto: " . $telefono  .  "\n Producto: " . $producto  .  "\n Mensaje: " . $mensaje;
 
     $response = $_POST['g-recaptcha-response'];
-    $secret = '6LeDwKAqAAAAAAdLqQGd5UF8aef8UCC_Dvf4xmmA';
+    $secret = '6LeZSKwqAAAAAPQ1YbMlFwCEBhGMqVSVaZ6vEiaa';
     $url = "https://www.google.com/recaptcha/api/siteverify";
 
     $ch = curl_init();
