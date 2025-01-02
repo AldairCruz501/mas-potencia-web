@@ -627,34 +627,7 @@ iframe {
 
 
 /*contacto*/
-.contact-info {
-  background-color: #0079b8;
-}
 
-.contact-info-title {
-  color: #ffffff;
-}
-
-.contact-info-item {
-  color: #ffffff;
-}
-
-.item-text {
-  font-size: 14px;
-}
-
-.item-text:hover{
-  color: #000000;
-}
-
-
-.link-hover:hover {
-  color: #000000 !important;
-}
-
-.logo-ml {
-  width: 50px;
-}
 
 /*--------------------------------
               Whatsapp
