@@ -69,6 +69,22 @@ a {
   width: 8rem;
 }
 
+  /*Top Bar*/
+  a{
+    color: #0079B8;
+  }
+  .text-primary img{
+    width: 30px;
+  }
+  .topbar-link:hover {
+    color: #000000;
+  }
+  
+  .separator {
+    color: #0079b8;
+  }
+  
+
 @media (min-width: 992px) {
   .navbar-brand img {
     width: 12rem;
@@ -105,90 +121,90 @@ a {
 
  /*banner*/
   
- #banner{
-  background-image: url(/assets/imagenes/portada.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-}
-
-.title-banner{
-  color: #ffffff;
-  font-size: 2.5rem;
-}
-
-.subtitle-banner{
-  color: #ffffff;
-  font-size: 2rem;
-}
-
-.subtitle-descp {
-  color: #ffffff;
-  font-size: 1rem;
-}
-
-.descp-banner{
-  color: #ffffff;
-  font-size: 1rem;
-}
-
-  .title-nosotros{
+  #banner{
+    background-image: url(/assets/imagenes/portada.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+  
+  .title-banner{
+    color: #ffffff;
+    font-size: 2.5rem;
+  }
+  
+  .subtitle-banner{
+    color: #ffffff;
     font-size: 2rem;
   }
   
-  .descp-nosotros{
+  .subtitle-descp {
+    color: #ffffff;
     font-size: 1rem;
   }
   
-  .img-nosotros {
-    width: 120%;
-  }
-
-  @media (min-width: 425px) {
-    .subtitle-banner{
-      color: #ffffff;
-      font-size: 3.5rem;
-    }
-    
-    .subtitle-descp {
-      color: #ffffff;
-      font-size: 1.5rem;
-    }
-  }
-
-@media (min-width: 992px) {
-  #banner {
-    height: 40rem;
-    position: relative;
-    margin-top: 130px;
-    z-index: 1;
-  }
-  .title-banner {
-    font-size: 5rem;
-  }
-  .subtitle-banner{
-    font-size: 9rem;
-  }
-  .subtitle-descp {
-    font-size: 4rem;
-  }  
-  .descp-banner {
-    font-size: 2rem;
-  }
-
-  .title-nosotros{
-    font-size: 2.5rem !important;
+  .descp-banner{
+    color: #ffffff;
+    font-size: 1rem;
   }
   
-  .descp-nosotros{
-    font-size: 1.5rem !important;
+    .title-nosotros{
+      font-size: 2rem;
+    }
+    
+    .descp-nosotros{
+      font-size: 1rem;
+    }
+    
+    .img-nosotros {
+      width: 120%;
+    }
+  
+    @media (min-width: 425px) {
+      .subtitle-banner{
+        color: #ffffff;
+        font-size: 3.5rem;
+      }
+      
+      .subtitle-descp {
+        color: #ffffff;
+        font-size: 1.5rem;
+      }
+    }
+  
+  @media (min-width: 992px) {
+    #banner {
+      height: 40rem;
+      position: relative;
+      margin-top: 130px;
+      z-index: 1;
+    }
+    .title-banner {
+      font-size: 5rem;
+    }
+    .subtitle-banner{
+      font-size: 9rem;
+    }
+    .subtitle-descp {
+      font-size: 4rem;
+    }  
+    .descp-banner {
+      font-size: 2rem;
+    }
+  
+    .title-nosotros{
+      font-size: 2.5rem !important;
+    }
+    
+    .descp-nosotros{
+      font-size: 1.5rem !important;
+    }
+  
+    .img-nosotros {
+      width: 75%;
+    }
+  
   }
-
-  .img-nosotros {
-    width: 75%;
-  }
-
-}
 
 .btn-comprar {
   display: inline-block;
