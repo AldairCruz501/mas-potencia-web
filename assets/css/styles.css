@@ -1698,21 +1698,21 @@ iframe {
   color: #000000;
 }
 
-#nombre,
-#correo,
-#telefono,
-#producto,
-#mensaje,
+.nombre,
+.correo,
+.telefono,
+.producto,
+.mensaje,
 .btn{
   background-color: #0079B8;
   color: #FFFFFF;
 }
 
-#nombre::placeholder,
-#correo::placeholder,
-#telefono::placeholder,
-#producto::placeholder,
-#mensaje::placeholder {
+.nombre::placeholder,
+.correo::placeholder,
+.telefono::placeholder,
+.producto::placeholder,
+.mensaje::placeholder {
   color: #ffffff;
 }
 
