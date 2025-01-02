@@ -569,7 +569,7 @@
                 Compra Directa
               </h1>
               <p>Déjanos tus datos. Te contactaremos pronto.</p>
-              <form action="enviar.php" method="POST" id="contactForm">
+              <form action="enviar.php" method="post">
                 <div class="row">
                   <div class="col-md-6 mb-4">
                     <div class="form-outline">
@@ -664,52 +664,5 @@
   <script src="assets/slick/slick/slick.js"></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src="https://kit.fontawesome.com/b396c78e84.js" crossorigin="anonymous"></script>
-  <!-- SweetAlert Script -->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script>
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault();  // Evitar el envío del formulario
-        const formData = new FormData(this);
-        
-        fetch('enviar.php', {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => response.json())  // Esperar respuesta JSON
-        .then(data => {
-            // Muestra el mensaje dependiendo del status
-            if (data.status === 'success') {
-                Swal.fire({
-                    title: data.title,
-                    text: data.text,
-                    icon: 'success',
-                    confirmButtonText: 'Aceptar'
-                }).then(() => {
-                    window.location.replace('index.html');
-                });
-            } else {
-                Swal.fire({
-                    title: data.title,
-                    text: data.text,
-                    icon: 'error',
-                    confirmButtonText: 'Aceptar'
-                }).then(() => {
-                    window.location.replace('index.html#contacto');
-                });
-            }
-        })
-        .catch(error => {
-            // En caso de error
-            Swal.fire({
-                title: 'Error',
-                text: 'Hubo un problema con el envío del formulario',
-                icon: 'error',
-                confirmButtonText: 'Aceptar'
-            }).then(() => {
-                window.location.replace('index.html#contacto');
-            });
-        });
-    });
-</script>
 </body>
 </html>
