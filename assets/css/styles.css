@@ -1701,7 +1701,7 @@ iframe {
 .nombre,
 .correo,
 .telefono,
-.producto,
+.productos,
 .mensaje,
 .btn{
   background-color: #0079B8;
@@ -1711,7 +1711,7 @@ iframe {
 .nombre::placeholder,
 .correo::placeholder,
 .telefono::placeholder,
-.producto::placeholder,
+.productos::placeholder,
 .mensaje::placeholder {
   color: #ffffff;
 }
