@@ -341,10 +341,17 @@ p {
   border-radius: 10px;
 }
 
-#faqs {
+#faqs{
   background-image: url(/assets/imagenes/fondo-faq.png);
   background-size: cover;
-  padding: 1rem 0;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.title-faqs {
+  color: #0079b8;
 }
 
 .accordion-item {
@@ -355,11 +362,29 @@ p {
 
 .accordion-button {
   border: 1px solid #ccc;
+  border-radius: 5px;
   background-color: transparent;
 }
 
 .accordion-button:not(.collapsed) {
   background-color: #e9ecef;
+}
+
+.accordion-button.collapsed .title-accordion {
+  color: #0079b8;
+}
+
+.accordion-button:not(.collapsed) .title-accordion {
+  color: #000000;
+}
+
+.descp-accordion {
+  color: #000000;
+}
+
+.accordion-body {
+  padding: 1rem;
+  background-color: #fff;
 }
 
 
