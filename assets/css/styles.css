@@ -203,6 +203,56 @@ p {
   
   }
 
+  .title-card {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    padding: 5rem 0rem;
+    color: #fff;
+    font-size: 25px;
+    line-height: 0.9;
+    width: 100%;
+  }
+
+  .button-card {
+    position: absolute;
+    bottom: 0;
+    z-index: 8;
+    margin-top: 20rem;
+    margin-bottom: 2.5rem;
+    margin-left: 0rem;
+    background-color: transparent !important;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-card:hover {
+    background-color: #ffffff !important;
+    color: #0079b8;
+  }
+
+  @media (max-width: 550px) {
+    .title-card {
+      padding: 5rem;
+      margin-left: -5rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .title-card {
+      padding: 5rem;
+      margin-left: -5rem;
+      font-size: 0.9rem;
+    }
+  }
+
+
 .btn-comprar {
   display: inline-block;
   margin-top: 10px;
